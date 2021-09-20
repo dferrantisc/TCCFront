@@ -11,10 +11,6 @@ export function PageModalProvider({ children }) {
     setModalOpen(false);
   }, [router.pathname]);
 
-  useEffect(() => {
-    console.log(isOpen);
-  }, [isOpen]);
-
   return (
     <PageModalContext.Provider value={{ isOpen, setModalOpen }}>
       {children}

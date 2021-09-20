@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row } from "reactstrap";
 
 // core components
 import AuthNavbar from "components/Navbars/AuthNavbar.js";
-import AuthFooter from "components/Footers/AuthFooter.js";
-
-import routes from "routes.js";
+import { AuthContext } from "context/AuthContext";
+import PageChange from "components/PageChange/PageChange";
 
 function Auth(props) {
+  const { isAuthLoaded } = useContext(AuthContext);
+
+  if (!isAuthLoaded) return <PageChange />;
+
   React.useEffect(() => {
     document.body.classList.add("bg-default");
     // Specify how to clean up after this effect:

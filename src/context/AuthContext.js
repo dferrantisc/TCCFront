@@ -13,6 +13,7 @@ export function signOut() {
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
+  const [isAuthLoaded, setIsAuthLoaded] = useState(false);
   const router = useRouter();
   const isAuthenticated = !!user;
 
@@ -24,8 +25,11 @@ export function AuthProvider({ children }) {
         .get("/me")
         .then((response) => setUser(response.data))
         .catch(() => signOut());
+
+      setIsAuthLoaded(true);
     } else {
       router.push("/auth/login");
+      setIsAuthLoaded(false);
     }
   }, []);
 
@@ -46,13 +50,16 @@ export function AuthProvider({ children }) {
 
       toast.success("Login realizado");
 
+      setIsAuthLoaded(true);
       router.push("/admin/dashboard");
     } catch (error) {
       toast.error("Credenciais inválidas");
     }
   }
   return (
-    <AuthContext.Provider value={{ signIn, signOut, isAuthenticated, user }}>
+    <AuthContext.Provider
+      value={{ signIn, signOut, isAuthenticated, user, isAuthLoaded }}
+    >
       {children}
     </AuthContext.Provider>
   );

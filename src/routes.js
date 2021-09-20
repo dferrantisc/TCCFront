@@ -6,7 +6,7 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/categories",
+    path: "/categorias",
     name: "Categorias",
     icon: "fas fa-th text-blue",
     layout: "/admin",

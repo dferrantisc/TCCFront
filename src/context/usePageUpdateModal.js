@@ -12,10 +12,6 @@ export function PageUpdateModalProvider({ children }) {
     setUpdateModalOpen(false);
   }, [router.pathname]);
 
-  useEffect(() => {
-    console.log(item);
-  }, [item]);
-
   return (
     <PageUpdateModal.Provider
       value={{

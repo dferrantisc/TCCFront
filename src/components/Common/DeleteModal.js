@@ -16,7 +16,7 @@ export function DeleteModal({ handleDelete }) {
     >
       <div className=" modal-header">
         <h5 className=" modal-title" id="exampleModalLabel">
-          Remoer item
+          Remover item
         </h5>
         <button
           aria-label="Close"

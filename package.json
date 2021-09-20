@@ -31,6 +31,7 @@
     "chart.js": "2.9.4",
     "classnames": "2.2.6",
     "cookie": "^0.4.1",
+    "formik": "^2.2.9",
     "moment": "2.29.1",
     "next": "10.0.6",
     "next-compose-plugins": "2.2.1",
@@ -48,6 +49,7 @@
     "react-dom": "17.0.1",
     "react-toastify": "^8.0.2",
     "reactstrap": "8.9.0",
-    "webpack": "4.44.1"
+    "webpack": "4.44.1",
+    "yup": "^0.32.9"
   }
 }
