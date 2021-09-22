@@ -1,7 +1,7 @@
 import { SERVER_IP } from "config";
 import { usePageDeleteModal } from "context/usePageDeleteModal";
 import { usePageUpdateModal } from "context/usePageUpdateModal";
-import { Button, Table } from "reactstrap";
+import { Button, Table, UncontrolledTooltip } from "reactstrap";
 
 export function TableCatalogos({ catalogos }) {
   const { setUpdateModalOpen, setItem } = usePageUpdateModal();
@@ -56,8 +56,12 @@ export function TableCatalogos({ catalogos }) {
                   setItem(catalogo);
                   setUpdateModalOpen(true);
                 }}
+                id="infoButton"
               >
                 <i className="fas fa-edit text-info"></i>
+                <UncontrolledTooltip placement="bottom" target="infoButton">
+                  Editar
+                </UncontrolledTooltip>
               </Button>
               <Button
                 size="sm"
@@ -65,9 +69,13 @@ export function TableCatalogos({ catalogos }) {
                   setDeleteItemId(catalogo.id);
                   setDeleteModalOpen(true);
                 }}
+                id="removeButton"
               >
                 <i className="fas fa-trash text-danger"></i>
               </Button>
+              <UncontrolledTooltip placement="bottom" target="removeButton">
+                Remover
+              </UncontrolledTooltip>
             </td>
           </tr>
         ))}
