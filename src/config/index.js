@@ -1,3 +1,3 @@
 module.exports = {
-  SERVER_IP: "http://localhost:5000",
+    SERVER_IP: "http://localhost:5000",
 };
