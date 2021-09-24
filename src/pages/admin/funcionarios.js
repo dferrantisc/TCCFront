@@ -54,7 +54,7 @@ function Funcionarios() {
                             <CardHeader className="border-0 d-flex justify-content-between">
                                 <h3 className="mb-0">Lista de Funcionario</h3>
                                 <Button color="success" onClick={() => setModalOpen(true)}>
-                                    Adicionar nova funcionario
+                                    Adicionar novo funcionario
                                 </Button>
                             </CardHeader>
                             {Funcionarios.length === 0 ? (

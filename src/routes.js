@@ -10,22 +10,17 @@ var routes = [{
         icon: "fas fa-th text-blue",
         layout: "/admin",
     },
-    {
-        path: "/sorteios",
-        name: "Sorteios",
-        icon: "fas fa-gift text-blue",
-        layout: "/admin",
-    },
+
     {
         path: "/catalogo",
-        name: "Catálogo",
+        name: "Produtos",
         icon: "fas fa-bars text-blue",
         layout: "/admin",
     },
     {
         path: "/sorteios",
-        name: "Opções Gerais",
-        icon: "fas fa-cogs text-blue",
+        name: "Sorteios",
+        icon: "fas fa-gift text-blue",
         layout: "/admin",
     },
     {
@@ -34,6 +29,13 @@ var routes = [{
         icon: "fas fa-user text-blue",
         layout: "/admin",
     },
+    {
+        path: "/sorteios",
+        name: "Opções Gerais",
+        icon: "fas fa-cogs text-blue",
+        layout: "/admin",
+    },
+
     {
         path: "/",
         name: "Ver Site",

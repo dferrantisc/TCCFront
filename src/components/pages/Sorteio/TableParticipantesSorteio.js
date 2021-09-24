@@ -28,40 +28,13 @@ export function TableParticipantesSorteio({ participantes }) {
         <tbody>
           <tr>
             <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
+              <span className="mb-0 text-sm">Teste 1</span>
             </td>
             <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
+              <span className="mb-0 text-sm">test1@gmail.com</span>
             </td>
             <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
-            </td>
-
-            <td>
-              <Button
-                size="sm"
-                //   onClick={() => {
-                //     setDeleteItemId(sorteio.idsort);
-                //     setDeleteModalOpen(true);
-                //   }}
-                id="removeButton"
-              >
-                <i className="fas fa-trash text-danger"></i>
-              </Button>
-              <UncontrolledTooltip placement="bottom" target="removeButton">
-                Remover
-              </UncontrolledTooltip>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
-            </td>
-            <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
-            </td>
-            <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
+              <span className="(67) 9 9999-9999">test1@gmail.com</span>
             </td>
 
             <td>
@@ -82,40 +55,13 @@ export function TableParticipantesSorteio({ participantes }) {
           </tr>
           <tr>
             <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
+              <span className="mb-0 text-sm">Test 2</span>
             </td>
             <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
+              <span className="mb-0 text-sm">test2@gmail.com</span>
             </td>
             <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
-            </td>
-
-            <td>
-              <Button
-                size="sm"
-                //   onClick={() => {
-                //     setDeleteItemId(sorteio.idsort);
-                //     setDeleteModalOpen(true);
-                //   }}
-                id="removeButton"
-              >
-                <i className="fas fa-trash text-danger"></i>
-              </Button>
-              <UncontrolledTooltip placement="bottom" target="removeButton">
-                Remover
-              </UncontrolledTooltip>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
-            </td>
-            <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
-            </td>
-            <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
+              <span className="(67) 9 9999-9999">test3@gmail.com</span>
             </td>
 
             <td>
@@ -136,40 +82,13 @@ export function TableParticipantesSorteio({ participantes }) {
           </tr>
           <tr>
             <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
+              <span className="mb-0 text-sm">test4</span>
             </td>
             <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
             </td>
             <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
-            </td>
-
-            <td>
-              <Button
-                size="sm"
-                //   onClick={() => {
-                //     setDeleteItemId(sorteio.idsort);
-                //     setDeleteModalOpen(true);
-                //   }}
-                id="removeButton"
-              >
-                <i className="fas fa-trash text-danger"></i>
-              </Button>
-              <UncontrolledTooltip placement="bottom" target="removeButton">
-                Remover
-              </UncontrolledTooltip>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
-            </td>
-            <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
-            </td>
-            <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
             </td>
 
             <td>
@@ -190,40 +109,13 @@ export function TableParticipantesSorteio({ participantes }) {
           </tr>
           <tr>
             <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
+              <span className="mb-0 text-sm">test4</span>
             </td>
             <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
             </td>
             <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
-            </td>
-
-            <td>
-              <Button
-                size="sm"
-                //   onClick={() => {
-                //     setDeleteItemId(sorteio.idsort);
-                //     setDeleteModalOpen(true);
-                //   }}
-                id="removeButton"
-              >
-                <i className="fas fa-trash text-danger"></i>
-              </Button>
-              <UncontrolledTooltip placement="bottom" target="removeButton">
-                Remover
-              </UncontrolledTooltip>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
-            </td>
-            <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
-            </td>
-            <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
             </td>
 
             <td>
@@ -244,40 +136,13 @@ export function TableParticipantesSorteio({ participantes }) {
           </tr>
           <tr>
             <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
+              <span className="mb-0 text-sm">test4</span>
             </td>
             <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
             </td>
             <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
-            </td>
-
-            <td>
-              <Button
-                size="sm"
-                //   onClick={() => {
-                //     setDeleteItemId(sorteio.idsort);
-                //     setDeleteModalOpen(true);
-                //   }}
-                id="removeButton"
-              >
-                <i className="fas fa-trash text-danger"></i>
-              </Button>
-              <UncontrolledTooltip placement="bottom" target="removeButton">
-                Remover
-              </UncontrolledTooltip>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
-            </td>
-            <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
-            </td>
-            <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
             </td>
 
             <td>
@@ -298,13 +163,148 @@ export function TableParticipantesSorteio({ participantes }) {
           </tr>
           <tr>
             <td>
-              <span className="mb-0 text-sm">Lucas Ferreira</span>
+              <span className="mb-0 text-sm">test4</span>
             </td>
             <td>
-              <span className="mb-0 text-sm">lucas@gmail.com</span>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
             </td>
             <td>
-              <span className="(67) 9 9999-9999">lucas@gmail.com</span>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
+            </td>
+
+            <td>
+              <Button
+                size="sm"
+                //   onClick={() => {
+                //     setDeleteItemId(sorteio.idsort);
+                //     setDeleteModalOpen(true);
+                //   }}
+                id="removeButton"
+              >
+                <i className="fas fa-trash text-danger"></i>
+              </Button>
+              <UncontrolledTooltip placement="bottom" target="removeButton">
+                Remover
+              </UncontrolledTooltip>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="mb-0 text-sm">test4</span>
+            </td>
+            <td>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
+            </td>
+            <td>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
+            </td>
+
+            <td>
+              <Button
+                size="sm"
+                //   onClick={() => {
+                //     setDeleteItemId(sorteio.idsort);
+                //     setDeleteModalOpen(true);
+                //   }}
+                id="removeButton"
+              >
+                <i className="fas fa-trash text-danger"></i>
+              </Button>
+              <UncontrolledTooltip placement="bottom" target="removeButton">
+                Remover
+              </UncontrolledTooltip>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="mb-0 text-sm">test4</span>
+            </td>
+            <td>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
+            </td>
+            <td>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
+            </td>
+
+            <td>
+              <Button
+                size="sm"
+                //   onClick={() => {
+                //     setDeleteItemId(sorteio.idsort);
+                //     setDeleteModalOpen(true);
+                //   }}
+                id="removeButton"
+              >
+                <i className="fas fa-trash text-danger"></i>
+              </Button>
+              <UncontrolledTooltip placement="bottom" target="removeButton">
+                Remover
+              </UncontrolledTooltip>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="mb-0 text-sm">test4</span>
+            </td>
+            <td>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
+            </td>
+            <td>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
+            </td>
+
+            <td>
+              <Button
+                size="sm"
+                //   onClick={() => {
+                //     setDeleteItemId(sorteio.idsort);
+                //     setDeleteModalOpen(true);
+                //   }}
+                id="removeButton"
+              >
+                <i className="fas fa-trash text-danger"></i>
+              </Button>
+              <UncontrolledTooltip placement="bottom" target="removeButton">
+                Remover
+              </UncontrolledTooltip>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="mb-0 text-sm">test4</span>
+            </td>
+            <td>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
+            </td>
+            <td>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
+            </td>
+
+            <td>
+              <Button
+                size="sm"
+                //   onClick={() => {
+                //     setDeleteItemId(sorteio.idsort);
+                //     setDeleteModalOpen(true);
+                //   }}
+                id="removeButton"
+              >
+                <i className="fas fa-trash text-danger"></i>
+              </Button>
+              <UncontrolledTooltip placement="bottom" target="removeButton">
+                Remover
+              </UncontrolledTooltip>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span className="mb-0 text-sm">test4</span>
+            </td>
+            <td>
+              <span className="mb-0 text-sm">test4@gmail.com</span>
+            </td>
+            <td>
+              <span className="(67) 9 9999-9999">test4@gmail.com</span>
             </td>
 
             <td>
