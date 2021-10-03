@@ -32,16 +32,12 @@ const schema = Yup.object().shape({
     .typeError("Informe um valor válido")
     .required("Campo obrigatório"),
   imagem: Yup.string().required("Campo obrigatório"),
+  datainicio: Yup.string().required("Campo obrigatório"),
+  datafim: Yup.string().required("Campo obrigatório"),
 });
 
 export function ModalUpdateSorteio({ updateData }) {
   const { isOpenUpdateModal, setUpdateModalOpen, item } = usePageUpdateModal();
-  const [categorias, setCategorias] = useState([]);
-
-  useEffect(async () => {
-    const response = await api.get("/categoria");
-    setCategorias(response.data);
-  }, []);
 
   async function handleUpdate(values) {
     try {
@@ -50,6 +46,8 @@ export function ModalUpdateSorteio({ updateData }) {
       data.append("nome", values.nome);
       data.append("descricao", values.descricao);
       data.append("quantidade_ganhadores", values.quantidade_ganhadores);
+      data.append("datainicio", values.datainicio);
+      data.append("datafim", values.datafim);
       await api.put(`/sorteio/${item.idsort}`, data);
       updateData();
       toast.success("Sorteio atualizado com sucesso");
@@ -130,6 +128,30 @@ export function ModalUpdateSorteio({ updateData }) {
                   />
                   {errors.quantidade_ganhadores && (
                     <FormFeedback>{errors.quantidade_ganhadores}</FormFeedback>
+                  )}
+                </FormGroup>
+                <FormGroup>
+                  <Label>Data de início</Label>
+                  <Input
+                    tag={Field}
+                    type="date"
+                    name="datainicio"
+                    invalid={errors.datainicio && touched.datainicio}
+                  />
+                  {errors.datainicio && (
+                    <FormFeedback>{errors.datainicio}</FormFeedback>
+                  )}
+                </FormGroup>
+                <FormGroup>
+                  <Label>Data do fim</Label>
+                  <Input
+                    tag={Field}
+                    type="date"
+                    name="datafim"
+                    invalid={errors.datafim && touched.datafim}
+                  />
+                  {errors.datafim && (
+                    <FormFeedback>{errors.datafim}</FormFeedback>
                   )}
                 </FormGroup>
                 <FormGroup>

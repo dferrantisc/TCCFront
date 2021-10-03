@@ -19,8 +19,14 @@ export function TableSorteios({ sorteios }) {
           <th scope="col" style={{ width: "20%" }}>
             Nome
           </th>
-          <th scope="col" style={{ width: "40%" }}>
+          <th scope="col" style={{ width: "20%" }}>
             Descricao
+          </th>
+          <th scope="col" style={{ width: "10%" }}>
+            Início
+          </th>
+          <th scope="col" style={{ width: "10%" }}>
+            Fim
           </th>
           <th scope="col" style={{ width: "10%" }}>
             Quantidade de ganhadores
@@ -45,6 +51,20 @@ export function TableSorteios({ sorteios }) {
             </td>
             <td>
               <span className="mb-0 text-sm">{sorteio.descricao}</span>
+            </td>
+            <td>
+              {new Date(sorteio.datainicio).toLocaleDateString("pt-BR", {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
+              })}
+            </td>
+            <td>
+              {new Date(sorteio.datafim).toLocaleDateString("pt-BR", {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
+              })}
             </td>
             <td>{sorteio.quantidade_ganhadores}</td>
 

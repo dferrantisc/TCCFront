@@ -31,6 +31,8 @@ const schema = Yup.object().shape({
     .typeError("Informe um valor válido")
     .required("Campo obrigatório"),
   imagem: Yup.string().required("Campo obrigatório"),
+  dataInicio: Yup.string().required("Campo obrigatório"),
+  dataFim: Yup.string().required("Campo obrigatório"),
 });
 
 export function ModalCreateSorteio({ updateData }) {
@@ -38,11 +40,14 @@ export function ModalCreateSorteio({ updateData }) {
 
   async function handleCreate(values) {
     try {
+      console.log(values);
       const data = new FormData();
       data.append("imagem", values.imagem);
       data.append("nome", values.nome);
       data.append("descricao", values.descricao);
       data.append("quantidade_ganhadores", values.quantidade_ganhadores);
+      data.append("datainicio", values.dataInicio);
+      data.append("datafim", values.dataFim);
       await api.post("/sorteio", data);
       updateData();
       toast.success("Sorteio criada com sucesso");
@@ -119,6 +124,30 @@ export function ModalCreateSorteio({ updateData }) {
                   />
                   {errors.quantidade_ganhadores && (
                     <FormFeedback>{errors.quantidade_ganhadores}</FormFeedback>
+                  )}
+                </FormGroup>
+                <FormGroup>
+                  <Label>Data de início</Label>
+                  <Input
+                    tag={Field}
+                    type="date"
+                    name="dataInicio"
+                    invalid={errors.dataInicio && touched.dataInicio}
+                  />
+                  {errors.dataInicio && (
+                    <FormFeedback>{errors.dataInicio}</FormFeedback>
+                  )}
+                </FormGroup>
+                <FormGroup>
+                  <Label>Data do fim</Label>
+                  <Input
+                    tag={Field}
+                    type="date"
+                    name="dataFim"
+                    invalid={errors.dataFim && touched.dataFim}
+                  />
+                  {errors.dataFim && (
+                    <FormFeedback>{errors.dataFim}</FormFeedback>
                   )}
                 </FormGroup>
                 <FormGroup>
