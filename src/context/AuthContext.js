@@ -27,9 +27,6 @@ export function AuthProvider({ children }) {
         .catch(() => signOut());
 
       setIsAuthLoaded(true);
-    } else {
-      router.push("/auth/login");
-      setIsAuthLoaded(true);
     }
   }, []);
 
