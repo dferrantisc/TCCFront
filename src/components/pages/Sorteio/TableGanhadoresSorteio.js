@@ -1,7 +1,7 @@
 import { Table } from "reactstrap";
 
-export function TableParticipantesSorteio({ participantes }) {
-  if (participantes.length < 1) return <div>Nenhum cliente participando</div>;
+export function TableGanhadoresSorteio({ ganhadores }) {
+  if (ganhadores.length < 1) return <div>Sorteio em andamento</div>;
 
   return (
     <div style={{ maxHeight: "400px", overflow: "auto" }}>
@@ -20,7 +20,7 @@ export function TableParticipantesSorteio({ participantes }) {
           </tr>
         </thead>
         <tbody>
-          {participantes.map((participante) => (
+          {ganhadores.map((participante) => (
             <tr key={participante.iduc}>
               <td>
                 <span className="mb-0 text-sm">{participante.nome}</span>

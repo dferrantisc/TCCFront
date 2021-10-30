@@ -30,7 +30,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
-    const Layout = Component.layout || (({ children }) => <>{children}</>);
+    const Layout = Component.layout || (({ children }) => <> {children} </>);
 
     return (
       <React.Fragment>
@@ -39,20 +39,20 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>NextJS Argon Dashboard by Creative Tim</title>
-        </Head>
+          <title> NextJS Argon Dashboard by Creative Tim </title>{" "}
+        </Head>{" "}
         <AuthProvider>
           <PageModalProvider>
             <PageDeleteModalProvider>
               <PageUpdateModalProvider>
                 <Layout>
-                  <Component {...pageProps} />
-                </Layout>
+                  <Component {...pageProps} />{" "}
+                </Layout>{" "}
                 <ToastContainer />
-              </PageUpdateModalProvider>
-            </PageDeleteModalProvider>
-          </PageModalProvider>
-        </AuthProvider>
+              </PageUpdateModalProvider>{" "}
+            </PageDeleteModalProvider>{" "}
+          </PageModalProvider>{" "}
+        </AuthProvider>{" "}
       </React.Fragment>
     );
   }

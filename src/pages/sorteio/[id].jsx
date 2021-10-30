@@ -190,6 +190,11 @@ export const getServerSideProps = async (ctx) => {
     const { idsort, nome, descricao, imagem, datainicio, datafim } =
       response.data;
 
+    const dataAtual = new Date();
+
+    if (dataAtual < new Date(datainicio) || dataAtual > new Date(datafim))
+      throw new Error("Data invalida");
+
     return {
       props: {
         sorteio: {

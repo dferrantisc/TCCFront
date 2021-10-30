@@ -28,6 +28,7 @@ export function AuthProvider({ children }) {
 
       setIsAuthLoaded(true);
     }
+    setIsAuthLoaded(true);
   }, []);
 
   async function signIn({ login, senha }) {
