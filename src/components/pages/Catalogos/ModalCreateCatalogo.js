@@ -23,12 +23,14 @@ import { AuthContext } from "context/AuthContext";
 
 const initialState = {
   nome: "",
+  descricao:"",
   preco: "",
   categoria: "",
 };
 
 const schema = Yup.object().shape({
   nome: Yup.string().required("Campo obrigatório"),
+  descricao: Yup.string().required("Campo obrigatório"),
   preco: Yup.number()
     .typeError("Informe um valor válido")
     .required("Campo obrigatório"),
@@ -52,6 +54,7 @@ export function ModalCreateCatalogo({ updateData }) {
       const data = new FormData();
       data.append("imagem", values.imagem);
       data.append("nome", values.nome);
+      data.append("descricao", values.descricao);
       data.append("preco", values.preco);
       data.append("idcatg", values.categoria);
       data.append("idadm", user.id);
@@ -104,6 +107,16 @@ export function ModalCreateCatalogo({ updateData }) {
                     invalid={errors.nome && touched.nome}
                   />
                   {errors.nome && <FormFeedback>{errors.nome}</FormFeedback>}
+                </FormGroup>
+                <FormGroup>
+                  <Label>Descrição</Label>
+                  <Input
+                    tag={Field}
+                    type="text"
+                    name="descricao"
+                    invalid={errors.descricao && touched.descricao}
+                  />
+                  {errors.descricao && <FormFeedback>{errors.descricao}</FormFeedback>}
                 </FormGroup>
                 <FormGroup>
                   <Label>Categoria</Label>

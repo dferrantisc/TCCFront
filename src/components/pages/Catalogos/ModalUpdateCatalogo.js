@@ -25,6 +25,7 @@ import { AuthContext } from "context/AuthContext";
 
 const initialState = {
   nome: "",
+  descricao:"",
   preco: "",
   categoria: "",
 };
@@ -54,6 +55,7 @@ export function ModalUpdateCatalogo({ updateData }) {
       const data = new FormData();
       if (values.imagem) data.append("imagem", values.imagem);
       data.append("nome", values.nome);
+      data.append("descricao", values.descricao);
       data.append("preco", values.preco);
       data.append("idcatg", values.categoria);
       data.append("idadm", user.id);
@@ -91,6 +93,7 @@ export function ModalUpdateCatalogo({ updateData }) {
             item.categoria
               ? {
                   nome: item.nome,
+                  descricao: item.descricao,
                   categoria: item.categoria.idcatg,
                   preco: item.preço,
                 }
@@ -118,6 +121,16 @@ export function ModalUpdateCatalogo({ updateData }) {
                     invalid={errors.nome && touched.nome}
                   />
                   {errors.nome && <FormFeedback>{errors.nome}</FormFeedback>}
+                </FormGroup>
+                <FormGroup>
+                  <Label>Descrição</Label>
+                  <Input
+                    tag={Field}
+                    type="text"
+                    name="descricao"
+                    invalid={errors.descricao && touched.descricao}
+                  />
+                  {errors.descricao && <FormFeedback>{errors.descricao}</FormFeedback>}
                 </FormGroup>
                 <FormGroup>
                   <Label>Categoria</Label>

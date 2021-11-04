@@ -17,6 +17,9 @@ export function TableCatalogos({ catalogos }) {
           <th scope="col" style={{ width: "30%" }}>
             Nome
           </th>
+          <th scope="col" style={{ width: "30%" }}>
+            Descrição
+          </th>
           <th scope="col" style={{ width: "10%" }}>
             Preço
           </th>
@@ -40,6 +43,9 @@ export function TableCatalogos({ catalogos }) {
             </td>
             <td>
               <span className="mb-0 text-sm">{catalogo.nome}</span>
+            </td>
+            <td>
+              <span className="mb-0 text-sm">{catalogo.descricao}</span>
             </td>
             <td>
               {new Intl.NumberFormat("pt-BR", {
