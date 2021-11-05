@@ -155,12 +155,7 @@ function Sidebar(props) {
                   <span>Activity</span>
                 </DropdownItem>
               </Link>
-              <Link href="/admin/profile">
-                <DropdownItem>
-                  <i className="ni ni-support-16" />
-                  <span>Support</span>
-                </DropdownItem>
-              </Link>
+              
               <DropdownItem divider />
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                 <i className="ni ni-user-run" />

@@ -30,13 +30,6 @@ var routes = [{
         layout: "/admin",
     },
     {
-        path: "/sorteios",
-        name: "Opções Gerais",
-        icon: "fas fa-cogs text-blue",
-        layout: "/admin",
-    },
-
-    {
         path: "/",
         name: "Ver Site",
         icon: "fas fa-eye text-blue",
