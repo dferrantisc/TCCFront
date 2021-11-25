@@ -29,11 +29,11 @@ var routes = [{
         icon: "fas fa-user text-blue",
         layout: "/admin",
     },
-    {
-        path: "/",
-        name: "Ver Site",
-        icon: "fas fa-eye text-blue",
-        layout: "/admin",
-    },
+    /* {
+         path: "http://localhost:3001",
+          name: "Ver Site",
+          icon: "fas fa-eye text-blue",
+          layout: "/admin",
+     },*/
 ];
 export default routes;

@@ -79,7 +79,7 @@ function AdminNavbar({ brandText }) {
                 <DropdownItem divider />
                 <DropdownItem onClick={() => signOut()}>
                   <i className="ni ni-user-run" />
-                  <span>Logout</span>
+                  <span>Sair</span>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
